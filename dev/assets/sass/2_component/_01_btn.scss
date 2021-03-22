@@ -1,0 +1,173 @@
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-btn1{
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 1.6rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    line-height: 1;
+}
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+.slick-dots {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 30px;
+    li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #000;
+        margin: 30px 0;
+        button {
+            display: none;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+        &.slick-active {
+            background: #48b7d0;
+        }
+    }
+}
+
+.is-scrollToTop {
+    position: fixed;
+    // bottom: 1.2rem;
+    // right: 1.1rem;
+    z-index: 99;
+    opacity: 0;
+    animation: scroll 2s infinite;
+         @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-2%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    &.active {
+        opacity: 1;
+        transition: ease-in-out 1s;
+    }
+}
+.is-btn__togglemenu {
+    .is-show{
+        display: none;
+    }
+    &.active {
+        p {
+            display: none;
+        }
+        .is-show {
+            display: block;
+            margin-top: 40px;
+        }
+        .is-menu__button {
+            span {
+                &:nth-child(1),
+                &:nth-child(6){
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2),
+                &:nth-child(5){
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(1){
+                    left: 5px;
+                    top: 5px;
+                }
+                &:nth-child(2){
+                    left: calc( 50% - 5px );
+                    top: 5px;
+                }
+                &:nth-child(3){
+                    left: -50%;
+                    opacity: 0;
+                }
+                &:nth-child(4){
+                    left: 100%;
+                    opacity: 0;
+                }
+                &:nth-child(5){
+                    left: 5px;
+                    top: 20px;
+                }
+                &:nth-child(6){
+                    left: calc( 50% - 5px );
+                    top: 20px;
+                }
+            }
+        }
+    }
+}
+.is-menu__button {
+    width: 50px;
+    height: 6px;
+    position: relative;
+    margin: 0;
+    outline: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    span {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 61%;
+        background: #333;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        &:nth-child(even){
+            left: 65%;
+            border-radius: 0 3px 3px 0;
+        }
+        &:nth-child(odd){
+            left: 30%;
+            border-radius: 3px 0 0 3px;
+        }
+        &:nth-child(1),
+        &:nth-child(2){
+            top: 0px;
+        }
+        &:nth-child(3),
+        &:nth-child(4){
+            top: 12px;
+        }
+        &:nth-child(5),
+        &:nth-child(6) {
+            top: 25px;
+        }
+    }
+}
