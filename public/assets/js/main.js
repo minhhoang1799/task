@@ -81,11 +81,20 @@ function scrollheight() {
       }
     })
 }
+
+
+function activeLi(){
+    $('.c-nav__normal ul li').on('click', function(){
+        let a = $(this)
+        console.log(a);
+    })
+}
 $(document).ready( ()=>{
     slideSwiper();
     navMenu();
     scrollheight();
-    menuActive()
+    menuActive();
+    activeLi()
 })
 
 

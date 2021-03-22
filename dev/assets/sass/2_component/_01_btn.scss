@@ -38,6 +38,9 @@ btn
             background: #48b7d0;
         }
     }
+    @media (max-width: 767px){
+        display: none !important;
+    }
 }
 
 .is-scrollToTop {
