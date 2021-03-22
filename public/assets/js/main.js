@@ -85,8 +85,14 @@ function scrollheight() {
 
 function activeLi(){
     $('.c-nav__normal ul li').on('click', function(){
-        let a = $(this)
-        console.log(a);
+        let a = $(this).children().hasClass('c-nav__child')
+        if(a == true){
+            $(this).addClass('active')
+            $('.c-nav__normal ul li').addClass('hiden')
+        }
+        $('is-btn__close').on('click',function(){
+            $(this).removeClass('active')
+        })
     })
 }
 $(document).ready( ()=>{

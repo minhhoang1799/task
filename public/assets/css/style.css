@@ -390,6 +390,10 @@ img {
     display: -webkit-box;
     display: flex;
   }
+  .c-header__navsp .c-nav__normal ul li.active .c-nav__child {
+    left: 0;
+    width: 100%;
+  }
   .c-header__navsp .c-nav__background ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

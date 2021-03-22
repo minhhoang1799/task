@@ -236,6 +236,12 @@
               &:nth-child(6) {
                 display: flex;
               }
+              &.active {
+                .c-nav__child {
+                  left: 0;
+                  width: 100%;
+                }
+              }
             }
           }
         }
