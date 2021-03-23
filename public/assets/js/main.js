@@ -49,6 +49,18 @@ function slideSwiper(){
         dots: true,
         vertical: true,
     })
+    $('.c-listitem__slide').slick({
+        slidesToShow: 4,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            }
+          },
+        ]
+    })
 }
 function menuActive() {
     $('.is-btn__togglemenu').on('click', function(){
@@ -87,20 +99,17 @@ function activeLi(){
     $('.c-nav__normal ul li').on('click', function(){
         let a = $(this).children().hasClass('c-nav__child')
         if(a == true){
-            $(this).addClass('active')
-            $('.c-nav__normal ul li').addClass('hiden')
+            $('.c-nav__child').toggleClass('active')
         }
-        $('is-btn__close').on('click',function(){
-            $(this).removeClass('active')
-        })
-    })
+    });
 }
+
 $(document).ready( ()=>{
     slideSwiper();
     navMenu();
     scrollheight();
     menuActive();
-    activeLi()
+    activeLi();
 })
 
 
