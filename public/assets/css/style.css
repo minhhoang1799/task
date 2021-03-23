@@ -2252,8 +2252,8 @@ Css of home page
 
 .l-index4__item {
   -webkit-box-flex: 0;
-  flex: 0 0 calc(1918px/2);
-  max-width: calc(1918px/2);
+  flex: 0 0 calc(100%/2);
+  max-width: calc((100%/2));
   position: relative;
 }
 
@@ -2276,6 +2276,14 @@ Css of home page
 
 .l-index4__item--bg img:nth-child(2) {
   display: none;
+}
+
+.l-index4__item:first-child {
+  padding-right: 1px;
+}
+
+.l-index4__item:last-child {
+  padding-left: 1px;
 }
 
 .l-index4__title {
