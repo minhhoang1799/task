@@ -99,7 +99,13 @@ function activeLi(){
     $('.c-nav__normal ul li').on('click', function(){
         let a = $(this).children().hasClass('c-nav__child')
         if(a == true){
-            $('.c-nav__child').toggleClass('active')
+            $(this).children().toggleClass('active')
+        }
+    });
+    $('.c-nav__background ul li').on('click', function(){
+        let a = $(this).children().hasClass('c-nav__child')
+        if(a == true){
+            $(this).children().toggleClass('active')
         }
     });
 }
