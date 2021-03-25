@@ -6,6 +6,9 @@ footer
     @media (max-width: 767px){
         padding-top: 80px;
     }
+    @media (min-width: 320px) and (max-width: 749px) {
+        padding-top: 20px;
+    }
 }
 .l-footer1 {
     &__faq{
@@ -101,18 +104,24 @@ footer
             margin: 40px auto 10px auto;
         }
     }
+    @media (min-width: 320px) and (max-width: 749px){
+        &__faq {
+            margin: 20px auto 10px auto;
+            padding: 0 10px;
+        }
+    }
 }
 .l-footer2 {
-    padding-top: 34px;
+    padding-top: 33px;
     position: relative;
     &__line {
         background: #d3d3d3;
         text-align: center;
-        padding: 22px 0;
+        padding: 24px 0;
         a {
             font-size: 1.8rem;
             font-weight: 600;
-            line-height: 2.8rem;
+            line-height: 2.5rem;
             letter-spacing: 1px;
         }
     }
@@ -336,6 +345,22 @@ footer
             border-left-width: 225px;
             border-bottom: 785px solid #48b7d0;
             z-index: 1;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 749px){
+        &__line {
+            padding: 20px 0;
+        }
+        &__nav {
+            padding: 0 10px;
+        }
+        &::before {
+            border-bottom: 800px solid #40a62a;
+            border-right-width: 150px;
+        }
+        &::after {
+            border-left-width: 150px;
+            border-bottom: 800px solid #48b7d0
         }
     }
 }

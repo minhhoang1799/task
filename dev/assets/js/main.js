@@ -110,13 +110,13 @@ function activeLi(){
     });
 }
 
-$(document).ready( ()=>{
+
+$( document ).ready(function() {
     slideSwiper();
     navMenu();
     scrollheight();
     menuActive();
     activeLi();
-})
-
+});
 
 

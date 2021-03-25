@@ -67,6 +67,9 @@ btn
         opacity: 1;
         transition: ease-in-out 1s;
     }
+    @media(min-width: 320px) and (max-width: 749px){
+        width: 120px;
+    }
 }
 .is-btn__togglemenu {
     .is-show{

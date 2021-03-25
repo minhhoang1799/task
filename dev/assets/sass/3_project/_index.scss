@@ -62,7 +62,7 @@
         }
         &--content{
             width: 100%;
-            background: rgba(#000, .4);
+            background: rgba(#000, .7);
             display: flex;
             align-items: baseline;
             flex-direction: column;
@@ -256,12 +256,12 @@
             flex-wrap: nowrap;
             align-items: center;
             &--left{
-                flex: 0 0 7%;
-                max-width: 7%;
+               flex: auto;
+               max-width: 100%;
             }
             &--right {
-                max-width: 93%;
-                flex: 0 0 93%;
+                 flex: auto;
+                 max-width: 100%;
                 display: flex;
                 align-items: center;
                 padding-left: 5px;
@@ -270,6 +270,7 @@
         &__date {
             margin-bottom: 0;
             width: max-content;
+            padding-left: 10px;
             p {
                 width: max-content;
                 letter-spacing: 1.3px;
@@ -1039,6 +1040,49 @@
             }
         }
     }
+    @media (min-width:320px) and (max-width: 749px) {
+        &__item {
+            margin: 0 30px;
+        }
+        &__listitem{
+            .slick-prev,
+            .slick-next {
+                z-index: 99;
+                top: 40%;
+            }
+            .slick-prev {
+                left: 0px;
+                &::before {
+                    content: '\f053';
+                    width: 18px;
+                    height: 30px;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 700;
+                    font-size: 30px;
+                    color:#48b7d0
+                }
+            }
+            .slick-next {
+                right: 0px;
+                &::before {
+                    content: '\f054';
+                    width: 18px;
+                    height: 30px;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 700;
+                    font-size: 30px;
+                    color:#48b7d0
+                }
+            }
+        }
+        &__bottom {
+            margin: 0px 0 0 0;
+        }
+        &__title {
+            margin: 0;
+            padding: 20px;
+        }
+    }
 }
 .l-index4 {
     padding: 45px 0 0 0;
@@ -1137,6 +1181,15 @@
     &__content {
         top: 49%;
         left: 5.5%;
+    }
+   }
+   @media (min-width: 320px) and (max-width: 749px){
+    &__title{
+        margin-top: 0;
+    }
+    &__description {
+        line-height: 20.8px;
+        margin-top: 15px;
     }
    }
 }
