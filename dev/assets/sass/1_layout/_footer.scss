@@ -2,15 +2,16 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding-top: 50px;
+    // padding-top: 50px;
     @media (max-width: 767px){
-        padding-top: 80px;
+        padding-top: 0px;
     }
     @media (min-width: 320px) and (max-width: 749px) {
         padding-top: 20px;
     }
 }
 .l-footer1 {
+    padding: 50px 0 0 0;
     &__faq{
         max-width: 600px;
         margin: 0 auto;
@@ -61,6 +62,7 @@ footer
         }
     }
     @media (max-width: 767px){
+        padding: 77px 0 0 0;
         .u-navFaq {
             li {
                 flex-direction: column;
@@ -112,12 +114,13 @@ footer
     }
 }
 .l-footer2 {
-    padding-top: 33px;
+    // padding-top: 33px;
     position: relative;
     &__line {
         background: #d3d3d3;
         text-align: center;
         padding: 24px 0;
+        margin-top: 30px;
         a {
             font-size: 1.8rem;
             font-weight: 600;
@@ -196,7 +199,7 @@ footer
     }
     &__bf {
         position: absolute;
-        bottom: 10%;
+        bottom: 14%;
         left: 4%;
         img {
             &:nth-child(2){
@@ -231,8 +234,9 @@ footer
 
     @media (max-width: 767px){
         &__line {
-            padding: 40px 0;
+            padding: 37px 0;
             margin-bottom: 80px;
+            margin-top: 40px;
             a {
                 font-size: 2.8rem;
                 line-height: 28px;

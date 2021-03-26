@@ -48,7 +48,7 @@ function slideSwiper(){
         slidesToScroll: 1,
         dots: true,
         vertical: true,
-    })
+    });
     $('.c-listitem__slide').slick({
         slidesToShow: 4,
         arrows: true,
@@ -60,6 +60,13 @@ function slideSwiper(){
             }
           },
         ]
+    });
+    $('.c-infosingle__slide').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: '<div class="c-content__button--next"> <i class="fas fa-chevron-right"></i> </div>',
+        prevArrow: '<div class="c-content__button--prev"> <i class="fas fa-chevron-left"></i> </div>'
     })
 }
 function menuActive() {

@@ -26,6 +26,15 @@ section{
 	max-width: 1200px;
 	margin: 0 auto;
 }
+.l-container2{
+	max-width: 630px;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media (min-width: 1025px){
+		max-width: 600px;
+		padding: 0;
+	}
+}
 .l-row{
 	display: flex;
 	justify-content: space-between;

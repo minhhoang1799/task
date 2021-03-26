@@ -1,0 +1,214 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.l-contact__info {
+    padding: 50px 0;
+    .l-index1__info--icon {
+        .u-content {
+            font-size: 2.4rem;
+        }
+    }
+    .l-index1__info--description {
+        margin-top: 15px;
+        padding: 0 15px;
+        p {
+            font-size: 1.4rem;
+            line-height: 18px;
+            letter-spacing: 2px;
+        }
+    }
+    @media (min-width: 1025px){
+        .l-index1__info--description {
+            text-align-last: left;
+            text-align: left;
+            margin-top: 13px;
+            p {
+                line-height: 28px;
+                letter-spacing: .3px;
+            }
+        }
+    }
+}
+.l-formwrapper {
+    padding-bottom: 30px;
+    &__formgroup {
+        margin-bottom: 15px;
+        .is-validate {
+            display: flex;
+            align-items: center;
+            &__nconstrain {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 12px;
+                background: #a1a1a1;
+                border-radius: 3px;
+                p {
+                    font-size: 1.2rem;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                    color: #fff;
+                }
+            }
+            &__constraint {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 12px;
+                background: #40a62a;
+                border-radius: 3px;
+                p {
+                    font-size: 1.2rem;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                    color: #fff;
+                }
+            }
+            label {
+                font-size: 1.4rem;
+                line-height: 28px;
+                letter-spacing: 1px;
+                margin-left: 10px;
+            }
+        }
+        .is-input {
+            width: 100%;
+            input, select {
+                width: 100%;
+                height: 30px;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 30px;
+                &:focus {
+                    border: 1px solid #a68a2a;   
+                }
+            }
+            ::placeholder {
+                font-size: 1.2rem;
+                line-height: 28px;
+                letter-spacing: 1px;
+                color: #cccccc;
+            }
+            &__address {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                p {
+                    font-size: 1.4rem;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                }
+                input {
+                    width: 35%;
+                    margin-left: 5px;
+                }
+                select {
+                    width: 40%;
+                    margin-left: 10px;
+                    font-size: 1.2rem;
+                    line-height: 28px;
+                    color: #ccc;
+                    &:focus {
+                       background: #fff;
+                    }
+                   :valid {
+                       color: #333;
+                   }
+                }
+                
+            }
+        }
+        .is-textarea {
+            width: 100%;
+            textarea {
+                width: 100%;
+                height: 80px;
+                box-sizing: border-box;
+                padding: 0 10px;
+                line-height: 28px;
+                &:focus {
+                    border: 1px solid #a68a2a;   
+                }
+            }
+            ::placeholder {
+                font-size: 1.2rem;
+                line-height: 28px;
+                color: #cccccc;
+            }
+        }
+        &:nth-child(5) {
+            .is-input {
+                input {
+                    &:last-child {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &__formbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 28px;
+            letter-spacing: 1px;
+            background: #48b7d0;
+            color: #fff;
+            width: 170px;
+            height: 40px;
+            border: none;
+        }
+    }
+
+    @media (min-width: 768px){
+        &__formgroup {
+            margin-bottom: 25px;
+            .is-input {
+                input,
+                select {
+                    height: 35px;
+                }
+            }
+        }
+        .is-input__address {
+            select {
+                width: 35%;
+                margin-left: 20px;
+            }
+            input {
+                width: 20%;
+            }
+        }
+    }
+    @media (min-width: 1025px){
+        padding: 16px 0;
+        .is-wrap {
+            padding: 0 15px;
+        }
+        &__formgroup {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 35px;
+            .is-validate {
+                flex: 0 0 29.8245614035%;
+                max-width: 29.8245614035%;
+                &__nconstrain,
+                &__constraint{
+                    width: 42px;
+                    height: 22px;
+                }
+            }
+            .is-input,
+            .is-textarea {
+                flex: 0 0 70.1754385965%;
+                max-width: 70.1754385965%;
+            }
+        }
+    }
+}

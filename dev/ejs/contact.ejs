@@ -1,0 +1,119 @@
+<%- include('inc/_header'); %>
+<!--▼ Content area ▼-->
+<main class="p-contact">
+	<section class="c-banner__page">
+        <div class="u-img__banner">
+            <img src="./assets/img/contact-bn.png" alt="banner-child">
+        </div>
+        <h3 class="c-banner__name">お問い合わせ</h3>
+    </section>
+    <section class="l-contact__info">
+       <div class="l-container2">
+        <div class="l-index1__info">
+            <div class="l-index1__info--icon">
+                <div class="u-logochild">
+                    <img src="./assets/img/logo-child.png" alt="logo-child">
+                    <img src="./assets/img/logo-child1.png" alt="logo-child-sp">
+                </div>
+                <h3 class="u-content">
+                    お問い合わせフォーム
+                </h3>
+            </div>
+            <div class="l-index1__info--description">
+                <p>株式会社アイエステーへのお問い合わせ専用フォームです。弊社へのご質問・ご相談などありましたらどうぞお気軽にご連絡ください。後日メールまたはお電話にて返信いたします。    
+                </p>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="l-formwrapper">
+        <div class="l-container2">
+            <form action="" method="post">
+                <div class="is-wrap">
+                    <div class="l-formwrapper__formgroup">
+                        <div class="is-validate">
+                            <div class="is-validate__nconstrain">
+                                <p>任意</p>
+                            </div>
+                            <label for="">法人名</label>
+                        </div>
+                        <div class="is-input">
+                            <input type="text" name="Corporatename"  id="" placeholder="株式会社アイエステー">
+                        </div>
+                    </div>
+                    <div class="l-formwrapper__formgroup">
+                        <div class="is-validate">
+                            <div class="is-validate__constraint">
+                                <p>必須</p>
+                            </div>
+                            <label for="">お名前</label>
+                        </div>
+                        <div class="is-input">
+                            <input type="text" name="Corporatename" id="" placeholder="熊本 太郎">
+                        </div>
+                    </div>
+                    <div class="l-formwrapper__formgroup">
+                        <div class="is-validate">
+                            <div class="is-validate__constraint">
+                                <p>必須</p>
+                            </div>
+                            <label for="">メールアドレス</label>
+                        </div>
+                        <div class="is-input">
+                            <input type="email" name="Corporatename" id="" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="l-formwrapper__formgroup">
+                        <div class="is-validate">
+                            <div class="is-validate__constraint">
+                                <p>必須</p>
+                            </div>
+                            <label for="">電話番号</label>
+                        </div>
+                        <div class="is-input">
+                            <input type="number" name="Corporatename" id="" placeholder="00-0000-0000">
+                        </div>
+                    </div>
+                    <div class="l-formwrapper__formgroup">
+                        <div class="is-validate">
+                            <div class="is-validate__nconstrain">
+                                <p>任意</p>
+                            </div>
+                            <label for="">ご住所</label>
+                        </div>
+                        <div class="is-input">
+                            <div class="is-input__address">
+                                <p>〒</p>
+                                <input type="number" name="" id="" placeholder="株式会社アイエステー">
+                                <select name="" id="">
+                                    <option value="" disabled selected hidden>--都道府県--</option>
+                                    <option value="0">--都道府県0--</option>
+                                    <option value="1">--都道府県1--</option>
+                                </select>
+                            </div>
+                            <input type="text" name="Corporatename" id="" placeholder="株式会社アイエステー">
+                            <input type="text" name="Corporatename" id="" placeholder="株式会社アイエステー">
+                        </div>
+                    </div>
+                    <div class="l-formwrapper__formgroup">
+                        <div class="is-validate">
+                            <div class="is-validate__constraint">
+                                <p>必須</p>
+                            </div>
+                            <label for="">お問い合わせ
+                                内容</label>
+                        </div>
+                        <div class="is-textarea">
+                           <textarea name="content" id="" cols="30" rows="10" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-formwrapper__formbtn">
+                    <button type="submit">確認する <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<!--▲ Content are ▲-->
+<%- include('inc/_footer'); %>
