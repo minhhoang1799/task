@@ -104,18 +104,37 @@ Css of home page
                     width: 35%;
                     margin-left: 5px;
                 }
-                select {
+                .select {
                     width: 40%;
                     margin-left: 10px;
-                    font-size: 1.2rem;
-                    line-height: 28px;
-                    color: #ccc;
-                    &:focus {
-                       background: #fff;
+                    position: relative;
+                    select {
+                        width: 100%;
+                        font-size: 1.2rem;
+                        line-height: 28px;
+                        color: #ccc;
+                        appearance: none;
+                       
+                        &:focus {
+                           background: #fff;
+                        }
+                       :valid {
+                           color: #333;
+                       }
                     }
-                   :valid {
-                       color: #333;
-                   }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 5px;
+                        transform: translateY(-50%);
+                        width: 0;
+                        height: 0;
+                        border: 0 solid transparent;
+                        border-left-width: 5px;
+                        border-right-width: 5px;
+                        border-top: 5px solid #a1a1a1;
+                    }
                 }
                 
             }
@@ -176,7 +195,7 @@ Css of home page
             }
         }
         .is-input__address {
-            select {
+            .select {
                 width: 35%;
                 margin-left: 20px;
             }
@@ -186,18 +205,21 @@ Css of home page
         }
     }
     @media (min-width: 1025px){
-        padding: 16px 0;
+        padding: 16px 0 100px 0;
         .is-wrap {
-            padding: 0 15px;
+            padding: 0 20px 0 15px;
         }
         &__formgroup {
             display: flex;
-            align-items: baseline;
+            align-items: center;
             flex-wrap: wrap;
             margin-bottom: 35px;
             .is-validate {
-                flex: 0 0 29.8245614035%;
-                max-width: 29.8245614035%;
+                flex: 0 0 29%;
+                max-width: 29%;
+                label {
+                    letter-spacing: 0;
+                }
                 &__nconstrain,
                 &__constraint{
                     width: 42px;
@@ -206,8 +228,55 @@ Css of home page
             }
             .is-input,
             .is-textarea {
-                flex: 0 0 70.1754385965%;
-                max-width: 70.1754385965%;
+                flex: 0 0 71%;
+                max-width: 71%;
+            }
+            &:nth-child(5){
+                align-items: baseline;
+               .is-input {
+                   &__address {
+                       margin-bottom: 11px;
+                       input {
+                           width: 25%;
+                           margin-left: 9px;
+                           padding: 0 0 0 10px;
+                       }
+                       .select {
+                           width: 32%;
+                       }
+                   }
+                   input {
+                       &:last-child {
+                           margin-top: 10px;
+                       }
+                   }
+               }
+               .is-validate {
+                    &__nconstrain {
+                        align-items: baseline;
+                    }
+               }
+            }
+            &:nth-child(6){
+                align-items: flex-start;
+               .is-validate {
+                   align-items: baseline;
+                   label {
+                       max-width: 85px;
+                       line-height: 30px;
+                   }
+               }
+            }
+            .is-textarea {
+                textarea {
+                    height: 190px;
+                }
+            }
+        }
+        &__formbtn {
+            margin-top: 55px;
+            button{
+                width: 270px;
             }
         }
     }

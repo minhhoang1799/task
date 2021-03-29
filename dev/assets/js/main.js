@@ -91,7 +91,7 @@ function scrollheight() {
     });
     })
     $(window).scroll(function(){
-      let height = $('.c-banner').outerHeight() + $('.l-index1').outerHeight() + $('.l-index2').outerHeight();
+      let height = 100;
       if($(window).scrollTop() > height) {
         $('.is-scrollToTop').addClass('active')
       }

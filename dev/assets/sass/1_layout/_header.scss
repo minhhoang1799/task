@@ -388,7 +388,7 @@
   @media (max-width: 749px) and (min-width: 320px){
     padding: 10px 15px;
     &__logo {
-      flex-direction: column;
+      align-items: flex-start;
       &--image {
         width: 50%;
         height: 50%;
